@@ -237,7 +237,7 @@
                     let delay = BING_AUTOSEARCH.search.interval * searches.length;
 
                     if (BING_AUTOSEARCH.search.interval === 9999 && searches.length > 0)
-                        delay = randomDelay = ((Math.floor(Math.random() * 51) + 10) * 1000) + randomDelay;
+                        delay = randomDelay = ((Math.floor(Math.random() * 6) + 15) * 1000) + randomDelay;
 
                     searches.push({ term, url, index, delay });
                 }
