@@ -208,7 +208,7 @@
                     let complete = (BING_AUTOSEARCH.search.engine.timer.complete - now);
 
                     if (BING_AUTOSEARCH.search.interval === 9999) {
-                        BING_AUTOSEARCH.elements.div.timer.innerHTML = `<strong>Auto Search Running:</strong> 10~60 seconds (random) auto search interval active.`;
+                        BING_AUTOSEARCH.elements.div.timer.innerHTML = `<strong>Auto Search Running:</strong> 15~20 seconds (random) auto search interval active.`;
                     }
                     else if (complete >= 0) {
                         BING_AUTOSEARCH.elements.div.timer.innerHTML = `<strong>Auto Search Running:</strong> ${next >= 0 ? `New auto search in ${BING_AUTOSEARCH.search.engine.timer.toClockFormat(next)}` : "Finishing last auto search"}, estimated time to complete ${BING_AUTOSEARCH.search.engine.timer.toClockFormat(complete, true)}.`;
